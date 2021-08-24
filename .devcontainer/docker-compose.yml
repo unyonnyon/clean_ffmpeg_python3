@@ -1,0 +1,18 @@
+version: "3.4"
+
+services:
+  python:
+    container_name: clean_ffmpeg_python3
+    image: clean_ffmpeg_python3:dev
+    build:
+      context: ../python
+    volumes:
+      - ../python:/home/python/app
+    user: "1000:1000"
+    env_file: ./.env
+    command: ["/bin/bash"]
+    tty: true
+    expose:
+      - 5678
+    ports:
+      - 5678:5678

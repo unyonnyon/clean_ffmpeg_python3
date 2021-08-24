@@ -1,0 +1,11 @@
+{
+  "name": "ffmpeg python3",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "python",
+  "workspaceFolder": "/home/python/app",
+  "extensions": ["ms-python.python", "ms-python.vscode-pylance"],
+  "remoteEnv": {
+    "GID": "1000",
+    "UID": "1000"
+  }
+}
